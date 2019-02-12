@@ -1,5 +1,5 @@
 # Anomaly Detection
-To prevent fraudulent transactions before it happens and reduce financial loss due to criminal activity.
+To identify potential fraudulent transactions before transaction execution and reduce financial loss due to criminal activity.
 
 # Datasets
 The data source is retrieved from: https://www.kaggle.com/ntnu-testimon/paysim1<br/><br/>
