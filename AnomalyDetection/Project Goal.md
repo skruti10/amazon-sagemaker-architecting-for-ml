@@ -1,5 +1,5 @@
 # Anomaly Detection
-To prevent card fraud before it happens and reduce financial loss due to criminal activity.
+To prevent fraudulent transactions before it happens and reduce financial loss due to criminal activity.
 
 # Datasets
 The data source is retrieved from: https://www.kaggle.com/ntnu-testimon/paysim1<br/><br/>
@@ -18,10 +18,11 @@ The data fields in this data set are as follows:<br/>
 
 # Modeling Strategy
 As a team we will break the data set into three segments:
-- Train
-- Test
-- Validation
-As of now the team is keeping all fields in data set.  The data is considered to be ready "as-is".
+- Train - 70&#37; for training
+- Test - 20&#37; for testing
+- Validation - 10&#37;  for validation
+
+As of now the team is keeping all fields in data set.  The data is considered to be ready "as-is".  However we did conduct some exploratory analysis and just looking for casual relationships.
 
 # End Goal
 Before transaction is committed / approved, automatically run data thorugh model.  Any transactions flagged as being fradulent would be automatically put on hold and flagged for manual review.
