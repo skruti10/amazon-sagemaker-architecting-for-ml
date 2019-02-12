@@ -22,7 +22,9 @@ As a team we will break the data set into three segments:
 - Test - 20&#37; for testing
 - Validation - 10&#37;  for validation
 
-As of now the team is keeping all fields in data set.  The data is considered to be ready "as-is".  However we did conduct some exploratory analysis and attempted to find casual relationships.
+Initially the team thought we should keep all the fields in the data set, as the data was being described to be ready "as-is".  We did conduct some exploratory analysis and attempted to find casual relationships.
+
+After additional analysis, we determine that we should drop the fields <b>isFraud</b> and <b>isFlaggedFraud</b> as we are attempting to do an unsupervised training model.
 
 # End Goal
 Before transaction is committed / approved, automatically run data thorugh model.  Any transactions flagged as being fradulent would be automatically put on hold and flagged for manual review.
