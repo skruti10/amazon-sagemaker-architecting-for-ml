@@ -3,20 +3,22 @@ To prevent card fraud before it happens and reduce financial loss due to crimina
 
 # Datasets
 
-The data source is retrieved from: https://www.kaggle.com/ntnu-testimon/paysim1<br/>
+The data source is retrieved from: https://www.kaggle.com/ntnu-testimon/paysim1<br/><br/>
 The data fields in this data set are as follows:<br/>
-
-stepMaps a unit of time in the real world. In this case 1 step is 1 hour of time.<br/>
-typeCASH-IN, CASH-OUT, DEBIT, PAYMENT and TRANSFER<br/>
-amountamount of the transaction in local currency<br/>
-nameOrigcustomer who started the transaction<br/>
-oldbalanceOrginitial balance before the transaction<br/>
-newbalanceOrigcustomer's balance after the transaction.<br/>
-nameDestrecipient ID of the transaction.<br/>
-oldbalanceDestinitial recipient balance before the transaction.<br/>
-newbalanceDestrecipient's balance after the transaction.<br/>
-isFraudidentifies a fraudulent transaction (1) and non fraudulent (0)<br/>
-isFlaggedFraudflags illegal attempts to transfer more than 200.000 in a single transaction.<br/>
+<br/>
+<ul>
+<li><b>stepMaps</b> - a unit of time in the real world. In this case 1 step is 1 hour of time.</li>
+<li><b>type</b> - CASH-IN, CASH-OUT, DEBIT, PAYMENT and TRANSFER</li>
+<li><b>amount</b> - amount of the transaction in local currency</li>
+<li><b>nameOrig</b> - customer who started the transaction</li>
+<li><b>oldbalanceOrg</b> - initial balance before the transaction</li>
+<li><b>newbalanceOrig</b> - customer's balance after the transaction.</li>
+<li><b>nameDest</b> - recipient ID of the transaction</li>
+<li><b>oldbalanceDest</b> - initial recipient balance before the transaction</li>
+<li><b>newbalanceDest</b> - recipient's balance after the transaction</li>
+<li><b>isFraud</b> - identifies a fraudulent transaction (1) and non fraudulent (0)</li>
+<li><b>isFlaggedFraud</b> - flags illegal attempts to transfer more than 200.000 in a single transaction</li>
+</ul>
 
 # Modeling Strategy
 - Break up events into types of crime. These are as follows. Each new day will be cross-referenced against a multi-class classification model that predicts each block for it's likelihood of having any of 7 types of criminal activity.
