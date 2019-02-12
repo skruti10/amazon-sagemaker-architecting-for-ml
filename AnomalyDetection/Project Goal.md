@@ -43,4 +43,4 @@ Before transaction is committed / approved, automatically run data thorugh model
 # References
 [<b id="f1">1</b>] https://fin.plaid.com/articles/algorithmic-and-rules-based-fraud-models<br/>
 [<b id="f2">2</b>] <i>ibid.</i><br/>
-[<b id="f3">3</b>] <i>ibid.</><br/>
+[<b id="f3">3</b>] <i>ibid.</i><br/>
