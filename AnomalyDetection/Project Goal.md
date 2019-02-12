@@ -26,5 +26,8 @@ Initially the team thought we should keep all the fields in the data set, as the
 
 After additional analysis, we determine that we should drop the fields <b>isFraud</b> and <b>isFlaggedFraud</b> as we are attempting to do an unsupervised training model.
 
+# Model Selection
+The Random Cut Forest and IP Insights models were selected as our models. The team picked Random Cut Forest to start, but it was suggested by the instructors to do a comparision, so IP Insights was also selected to do a comparison
+
 # End Goal
 Before transaction is committed / approved, automatically run data thorugh model.  Any transactions flagged as being fradulent would be automatically put on hold and flagged for manual review.
