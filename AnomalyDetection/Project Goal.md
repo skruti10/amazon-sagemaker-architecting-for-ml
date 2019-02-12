@@ -2,23 +2,21 @@
 The Anti "Minority Report". To prevent criminal activity before it happens and save lives on both sides of the event. 
 
 # Datasets
-- Chicago Crime Data Sets: 
-https://data.cityofchicago.org/Public-Safety/Crimes-2001-to-present/ijzp-q8t2
-Includes:
-    - Block
-    - Location
-    - Type of Crime
-    - Description
-    - Time 
 
-- Weather in Chicago: NOAA will provide data from stations in Chicago on a daily basis for free.
-https://www.ncdc.noaa.gov/cdo-web/. This includes primarily temperature maxs and mins. Most of the other fields are missing.
+The data source is retrieved from: https://www.kaggle.com/ntnu-testimon/paysim1
+The data fields in this data set are as follows:
 
-- Headlines? Social tension indicators?
-- Gun availability indicators? 
-- Gang rivalry indicators? 
-- Housing price indicators; social status change data
-
+stepMaps a unit of time in the real world. In this case 1 step is 1 hour of time.
+typeCASH-IN, CASH-OUT, DEBIT, PAYMENT and TRANSFER
+amountamount of the transaction in local currency
+nameOrigcustomer who started the transaction
+oldbalanceOrginitial balance before the transaction
+newbalanceOrigcustomer's balance after the transaction.
+nameDestrecipient ID of the transaction.
+oldbalanceDestinitial recipient balance before the transaction.
+newbalanceDestrecipient's balance after the transaction.
+isFraudidentifies a fraudulent transaction (1) and non fraudulent (0)
+isFlaggedFraudflags illegal attempts to transfer more than 200.000 in a single transaction.
 
 # Modeling Strategy
 - Break up events into types of crime. These are as follows. Each new day will be cross-referenced against a multi-class classification model that predicts each block for it's likelihood of having any of 7 types of criminal activity.
