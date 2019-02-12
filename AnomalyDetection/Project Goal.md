@@ -6,12 +6,12 @@ The Anti "Minority Report". To prevent criminal activity before it happens and s
 The data source is retrieved from: https://www.kaggle.com/ntnu-testimon/paysim1
 The data fields in this data set are as follows:
 
-stepMaps a unit of time in the real world. In this case 1 step is 1 hour of time.
-typeCASH-IN, CASH-OUT, DEBIT, PAYMENT and TRANSFER
-amountamount of the transaction in local currency
-nameOrigcustomer who started the transaction
-oldbalanceOrginitial balance before the transaction
-newbalanceOrigcustomer's balance after the transaction.
+stepMaps a unit of time in the real world. In this case 1 step is 1 hour of time.<br/>
+typeCASH-IN, CASH-OUT, DEBIT, PAYMENT and TRANSFER<br/>
+amountamount of the transaction in local currency<br/>
+nameOrigcustomer who started the transaction<br/>
+oldbalanceOrginitial balance before the transaction<br/>
+newbalanceOrigcustomer's balance after the transaction.<br/>
 nameDestrecipient ID of the transaction.
 oldbalanceDestinitial recipient balance before the transaction.
 newbalanceDestrecipient's balance after the transaction.
