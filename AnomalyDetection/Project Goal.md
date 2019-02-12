@@ -22,7 +22,7 @@ As a team we will break the data set into three segments:
 - Test - 20&#37; for testing
 - Validation - 10&#37;  for validation
 
-As of now the team is keeping all fields in data set.  The data is considered to be ready "as-is".  However we did conduct some exploratory analysis and just looking for casual relationships.
+As of now the team is keeping all fields in data set.  The data is considered to be ready "as-is".  However we did conduct some exploratory analysis and attempted to find casual relationships.
 
 # End Goal
 Before transaction is committed / approved, automatically run data thorugh model.  Any transactions flagged as being fradulent would be automatically put on hold and flagged for manual review.
