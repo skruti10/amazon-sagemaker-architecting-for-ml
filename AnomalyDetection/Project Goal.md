@@ -21,6 +21,7 @@ As a team we will break the data set into three segments:
 - Train
 - Test
 - Validation
+As of now the team is keeping all fields in data set.  The data is considered to be ready "as-is".
 
 # End Goal
-Before transaction is committed / approved, run data thorugh model automatically.  Put transactions onhold as being fradulent and flag for manual review.
+Before transaction is committed / approved, automatically run data thorugh model.  Any transactions flagged as being fradulent would be automatically put on hold and flagged for manual review.
