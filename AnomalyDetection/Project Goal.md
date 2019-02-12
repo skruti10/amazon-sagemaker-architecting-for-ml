@@ -1,6 +1,8 @@
 # Anomaly Detection
 To identify potential fraudulent transactions before transaction execution and reduce financial loss due to criminal activity.
 
+<sup id="a1">[1](#f1)</sup>
+
 # Datasets
 The data source is retrieved from: https://www.kaggle.com/ntnu-testimon/paysim1<br/><br/>
 The data fields in this data set are as follows:<br/>
@@ -27,7 +29,11 @@ Initially the team thought we should keep all the fields in the data set, as the
 After additional analysis, we determine that we should drop the fields <b>isFraud</b> and <b>isFlaggedFraud</b> as we are attempting to do an unsupervised training model.
 
 # Model Selection
-The Random Cut Forest and IP Insights models were selected as our models. The team picked Random Cut Forest to start, but it was suggested by the instructors to do a comparision, so IP Insights was also selected to do a comparison
+We are going to work thorugh a unsupervised model using Random Cut Forest.  Once we complete the analysis of this model, we will determine an appropriate supervised model to compare and contrast the two models.
 
 # End Goal
 Before transaction is committed / approved, automatically run data thorugh model.  Any transactions flagged as being fradulent would be automatically put on hold and flagged for manual review.
+
+
+# References
+[<b id="f1">1</b>] https://fin.plaid.com/articles/algorithmic-and-rules-based-fraud-models
