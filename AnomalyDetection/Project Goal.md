@@ -1,10 +1,10 @@
-# Chicago-Crime
-The Anti "Minority Report". To prevent criminal activity before it happens and save lives on both sides of the event. 
+# Anomaly Detection
+To prevent card fraud before it happens and reduce financial loss due to criminal activity.
 
 # Datasets
 
-The data source is retrieved from: https://www.kaggle.com/ntnu-testimon/paysim1
-The data fields in this data set are as follows:
+The data source is retrieved from: https://www.kaggle.com/ntnu-testimon/paysim1<br/>
+The data fields in this data set are as follows:<br/>
 
 stepMaps a unit of time in the real world. In this case 1 step is 1 hour of time.<br/>
 typeCASH-IN, CASH-OUT, DEBIT, PAYMENT and TRANSFER<br/>
@@ -12,11 +12,11 @@ amountamount of the transaction in local currency<br/>
 nameOrigcustomer who started the transaction<br/>
 oldbalanceOrginitial balance before the transaction<br/>
 newbalanceOrigcustomer's balance after the transaction.<br/>
-nameDestrecipient ID of the transaction.
-oldbalanceDestinitial recipient balance before the transaction.
-newbalanceDestrecipient's balance after the transaction.
-isFraudidentifies a fraudulent transaction (1) and non fraudulent (0)
-isFlaggedFraudflags illegal attempts to transfer more than 200.000 in a single transaction.
+nameDestrecipient ID of the transaction.<br/>
+oldbalanceDestinitial recipient balance before the transaction.<br/>
+newbalanceDestrecipient's balance after the transaction.<br/>
+isFraudidentifies a fraudulent transaction (1) and non fraudulent (0)<br/>
+isFlaggedFraudflags illegal attempts to transfer more than 200.000 in a single transaction.<br/>
 
 # Modeling Strategy
 - Break up events into types of crime. These are as follows. Each new day will be cross-referenced against a multi-class classification model that predicts each block for it's likelihood of having any of 7 types of criminal activity.
