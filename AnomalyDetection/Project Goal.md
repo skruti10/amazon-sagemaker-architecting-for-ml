@@ -12,7 +12,7 @@ The data fields in this data set are as follows:<br/>
 <li><b>amount</b> - amount of the transaction in local currency</li>
 <li><b>nameOrig</b> - customer who started the transaction</li>
 <li><b>oldbalanceOrg</b> - initial balance before the transaction</li>
-<li><b>newbalanceOrig</b> - customer's balance after the transaction.</li>
+<li><b>newbalanceOrig</b> - customer's balance after the transaction</li>
 <li><b>nameDest</b> - recipient ID of the transaction</li>
 <li><b>oldbalanceDest</b> - initial recipient balance before the transaction</li>
 <li><b>newbalanceDest</b> - recipient's balance after the transaction</li>
