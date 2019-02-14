@@ -6,9 +6,24 @@ Historically, a fraud model was used in the financial services industry to autom
 
 As new payment services are introduced (e.g. <a href="https://pay.amazon.com/">Amazon Pay</a>), these new services will often access funds directly from a bank account, which means that this type financial service/product does not benefit from the fraud detection that a card network or issuer provided in the past.<sup id="a2">[2](#f2)</sup>
 
-Introducing new fraud models provide a way to mitigate these different types threats against these new payent services and protect users and merchants of this service. Additionally, these new fraud models will play a pivotal role in the payment service providers’ profitability and sustainability.<sup id="a3">[3](#f3)</sup>
+Introducing new fraud models provide a way to mitigate these different types threats against these new payment services and protect users and merchants of this service. Additionally, these new fraud models will play a pivotal role in the payment service providers’ profitability and sustainability.<sup id="a3">[3](#f3)</sup>
 
-There are two high-level models that are associated with fraud: rules-based and algorithmic (machine-learning) models.<sup id="a4">[4](#f4)</sup>
+There are two high-level models that are associated with fraud: rules-based and algorithmic (machine-learning) models.<sup id="a4">[4](#f4)</sup>  While we will focus on the algorithmic model in our team project, it will be good to review/cover the differences between the two.
+
+# Rules-Based Models
+A rules-based model is a collection of rules used to identify fraudulent transactions. A single rule contains as a set of conditions that, when satisfied, label a transaction as fraudulent or potentially fraudulent.<sup id="a4">[4](#f4)</sup>
+
+Some example rules are<sup id="a4">[4](#f4)</sup>:
+
+- If a user receives payments for large amounts from multiple newly created accounts
+- If a charge occurs at an infrequently visited gas station far from the card’s billing address
+- If someone from the same IP address is creating multiple accounts and sending money with credit cards
+
+Because rules-based models are just collections of conditions, they are easy to interpret. This extra transparency makes it simpler to diagnose and identify issues, e.g., why a model fails to identify a fraudulent transaction or mislabels a legitimate transaction as fraudulent. The interpretability also enables modelers to rapidly develop rules once a new threat is discovered.<sup id="a4">[4](#f4)</sup>
+
+Rules-based models are much simpler than their algorithmic counterparts. Their simplicity provides many benefits in the development cycle. For one, modelers have an easier time developing and validating rules-based models. Engineers also benefit from an easier system to implement. Rules-based models are also much faster in operation, which can be an important factor when dealing with a large number of transactions in real time.<sup id="a4">[4](#f4)</sup>
+
+# Algorithmic Models
 
 # Datasets
 The data source is retrieved from: https://www.kaggle.com/ntnu-testimon/paysim1<br/><br/>

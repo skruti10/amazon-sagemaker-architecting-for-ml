@@ -15,6 +15,32 @@
 <script type="text/javascript" src="apigClient.js"></script>
 </head>
 <body>
-Hello World!
+<script type="text/javascript">
+var apigClient = apigClientFactory.newClient();
+
+var params = "";
+
+var body = {'data': '50.00,75.00,25.00,100.00,150.00'};
+ 
+var additionalParams = {
+  // If there are any unmodeled query parameters or headers that must be
+  //   sent with the request, add them here.
+  headers: {
+  },
+  queryParams: {
+  }
+};
+
+apigClient.predicttransferPost(params, body, additionalParams).then(function(result){document.write(result["data"]);}).catch(function(result){document.write('Failure');})
+</script>
+<form id="frmTransact" name="frmTransact">
+Amount <input name="amount" id="amount" value="50.00"><br/>
+Old Balance Origin <input name="obo" id="obo" value="75.00"><br/>
+New Balance Origin <input name="nbo" id="nbo" value="25.00"><br/>
+Old Balance Destination <input name="obd" id="obd" value="100.00"><br/>
+New Balance Destination <input name="nbd" id="nbd" value="150.00"><br/>
+<input name="dataresult" id="dataresult"><br/>
+<button onclick="apigClient.predicttransferPost(params, body, additionalParams).then(function(result){document.getElementById("dataresult").value = result["data"];}).catch(function(result){document.getElementById("dataresult").value = "Failure";});">Click Me</button><br/>
+</form>
 </body>
 </html>
